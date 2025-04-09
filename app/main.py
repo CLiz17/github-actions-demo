@@ -7,6 +7,7 @@ load_dotenv()
 app = Flask(__name__)
 
 @app.route('/<random_string>')
+# This function takes a string as input and returns it in reverse order.
 def return_backwards_string(random_string):
     return random_string[::-1]
 
